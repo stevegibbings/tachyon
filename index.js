@@ -1,6 +1,6 @@
-var sharp = require( 'sharp' ),
-	AWS = require( 'aws-sdk' ),
-	path = require( 'path' )
+var sharp = require( 'sharp' )
+	, AWS = require( 'aws-sdk' )
+	, path = require( 'path' );
 
 AWS.config.region = 'eu-central-1'
 var s3 = new AWS.S3();
