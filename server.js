@@ -1,10 +1,10 @@
-var http   = require("http"),
-	url    = require("url"),
-	path   = require("path"),
-	tachyon= require( './index' ),
-	args = process.argv.slice(2),
-	port   = Number( args[0] ) ? args[0] : 8080,
-	debug  = args.indexOf( '--debug' ) > -1
+var http    = require("http")
+	, url     = require("url")
+	, path    = require("path")
+	, tachyon = require( './index' )
+	, args    = process.argv.slice(2)
+	, port    = Number( args[0] ) ? args[0] : 8080
+	, debug   = args.indexOf( '--debug' ) > -1;
 
 http.createServer( function( request, response ) {
 	var params = url.parse( request.url, true )
